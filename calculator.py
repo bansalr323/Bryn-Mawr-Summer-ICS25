@@ -20,5 +20,5 @@ print(f"The difference of {num7} and {num8} is {difference}.")
 
 num9 = int(input("Type in num9: "))
 num10 = int(input("Type in num10: "))
-remainder = num9%num10
+remainder = num9 % num10
 print(f"The remainder of {num9} and {num10} is {remainder}.")
