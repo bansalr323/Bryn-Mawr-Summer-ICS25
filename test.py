@@ -19,3 +19,11 @@ number = 10
 print(number)
 number = 25 
 print(number)
+print("demo'ing input")
+name = input("What is your name? ")
+print(name)
+print("input and math") 
+num1 = int(input("type in num 1: "))
+num2 = int(input("type in num 2: "))
+sum = num1 + num2 
+print(f"The sum of {num1} and {num2} is {sum}")
