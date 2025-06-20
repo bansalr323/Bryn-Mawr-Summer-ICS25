@@ -1,4 +1,4 @@
-#Boolean Values and Conditionals
+#Boolean Values and Conditionals:
 var1 = True 
 if var1 == True: 
     print("Hello World") 
@@ -42,9 +42,11 @@ else:
     print("No valid option for that sport")
 
 
-#Strings 
+#Strings:
 
-#.lower(), .upper(), and .strip()
+
+
+#.lower(), .upper(), and .strip():
 text = "HELLO WORLD"
 text = text.lower()
 print(text)
@@ -63,7 +65,7 @@ if option == "hello":
 elif option == "world": 
     print("world")
 
-#Adding Strings .join()
+#Adding Strings .join():
 str1 = "hello"
 str2 = "world"
 print(str1 + " " + str2) 
@@ -71,12 +73,12 @@ print(str1 + " " + str2)
 newstr = " ".join(str2)
 print(newstr)
 
-#.find()
+#.find():
 index = str1.find("l")
 print(index)
 
 
-#Lists 
+#Lists: 
 fruits = ["mangos", "bananas", "apples", "strawberries", "grapes"]
 print(fruits) 
 print(fruits[3])

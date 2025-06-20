@@ -22,7 +22,7 @@ elif option == "subtraction":
 elif option == "multiplication": 
     num5 = int(input("Type in num5: "))
     num6 = int(input("Type in num6: "))
-    product = num5 - num6 
+    product = num5 * num6 
     print(f"The product of {num5} and {num6} is {product}.")
 
 elif option == "division": 

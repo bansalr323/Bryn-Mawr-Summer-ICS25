@@ -1,4 +1,4 @@
-#Print Function
+#Print Function:
 print("Hello World") 
 
 print(5+10)
@@ -7,7 +7,7 @@ print(5*10)
 print(10/5)
 
 
-#Variables
+#Variables:
 print("Printing number:")
 number = 10 
 print(number)
@@ -28,7 +28,7 @@ number = 25
 print(number)
 
 
-#Inputs
+#Inputs:
 print("demo'ing input")
 name = input("What is your name? ")
 print(name)
