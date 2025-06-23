@@ -13,6 +13,7 @@ for row in board:
     print() 
 
 current_player = "X"
+
 #Row Victory 
 for i in range(len(board)): 
     if board[i][0] == board[i][1] == board[i][2] == current_player: 
