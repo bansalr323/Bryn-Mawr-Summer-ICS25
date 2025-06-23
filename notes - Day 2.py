@@ -90,11 +90,11 @@ fruits.insert(3, "strawberries")
 print(fruits) 
 
 mylist = [2,3,4,"Ria Bansal", True]
-'''print(mylist) 
+print(mylist) 
 mylist.remove("Ria Bansal")
 print(mylist)
 mylist.pop(3)
-print(mylist)'''
+print(mylist)
 print(mylist[-1]) 
 print(mylist[-2])
 option = int(input("Which object of your list would you like to access?: "))

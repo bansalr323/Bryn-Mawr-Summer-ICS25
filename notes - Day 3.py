@@ -71,7 +71,7 @@ print(mylist)
 
 #Concurrent Lists:  
 fruits = ["orange", "mango", "grapes"]
-price = [ 1.25, 1.50, 2.25] 
+price = [1.25, 1.50, 2.25] 
 
 print("Welcome to our store")
 for i in range(len(fruits)): 
