@@ -11,6 +11,7 @@ for row in board:
         print(number, end = "|")
     print() 
 
+
 current_player = "X"
 
 #Row Victory 
