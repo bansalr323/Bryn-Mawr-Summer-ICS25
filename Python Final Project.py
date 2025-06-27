@@ -8,6 +8,7 @@ def intro():
     print("You used to have friends there like Lightning (her real name was Lucy) but she betrayed you and so you knew you had to escape and stop these villans.")
     print("If you don't know about VILE there's not much I can tell you because (they are a top secret society).") 
     print("However I can tell you that they are up to no good especially with the new headmastress Mrs. Villy.")
+    print("Be careful because if you make the wrong choices then you won't gain any points. However if you make the right choices your score will go up!")
     print(" ") 
     print("Time is running out! Our first mission starts now: ")
 
@@ -93,14 +94,17 @@ def playChallenge(grid):
     check = True
     while tries <= 4 and check == True:
         print(" ")
+        printBoard(grid) 
         row = int(input("Enter the row you would like to guess (has to be a number from 0-2): "))
         col = int(input("Enter the column you would like to guess (has to be a number from 0-2): "))
         grid[row][col] = "X"
-        printBoard(grid)
+        tries += 1
         if (row,col) in wins:
+            print(" ")
             print("You win and you have completed a successful mission!")
             check = False
     if tries == 5: 
+        print(" ")
         print("You lose and have not completed a successful mission.")
        
 
@@ -112,6 +116,7 @@ def main():
     check = True 
 
     while check == True: 
+        score = 0 
         print(" ")
         print("Hello! This is a Choose Your Own Adventure Story.")
         print("Are you excited to play?")
@@ -130,6 +135,7 @@ def main():
             elif country_choice.isnumeric()== True:
 
                 if int(country_choice) == 1: 
+                    score += 2
                     print(" ")
                     print("Ok, you have landed in Indonesia, long flight right! However your job is not over yet.")
                     print("When you land in the airport you see this guy in all black and as soon as he sees you he runs away! ")
@@ -142,6 +148,7 @@ def main():
                     elif passport_choice.isnumeric()== True:
 
                         if int(passport_choice) == 1: 
+                            score += 2
                             print(" ")
                             print("On the passport (for some reason) he wrote the exact coordinates of where he was heading.")
                             print("I searched it up on Google Maps and apparently it was an unrecognized coordinate, which could only mean bad news")
@@ -160,9 +167,11 @@ def main():
                                 if int(follow_choice) == 1: 
                                     print(" ")
                                     print("He was trying to trick you! He catches you in the trunk and reports you. You have to fly back to your house and abort the mission.")
+                                    print(f"Your total score is {score}.")
                                     check = False 
 
                                 elif int(follow_choice) == 2: 
+                                    score += 2
                                     print(" ")
                                     print("Good job not following Mr. Vile! He was trying to trick you.")
                                     print("You reach VILE even earlier than him (because he took a little detour).")
@@ -173,6 +182,7 @@ def main():
                                     print("If you complete this last challenge your mission will be marked successfully completed.")
                                     challengeInstructions()
                                     playChallenge(board)
+                                    print(f"Your total score is {score}.")
                                     check = False
 
                         elif int(passport_choice) == 2: 
@@ -198,16 +208,20 @@ def main():
                                     if int(facing_MrVile_choice) == 1: 
                                         print(" ")
                                         print("You fought and fought, but Mr. Vile was stronger. You ended up brainwashed.")
+                                        print(f"Your total score is {score}.")
                                         check = False 
+                                        
 
                                     elif int(facing_MrVile_choice) == 2: 
                                         print(" ")
                                         print("You ran and ran away and since you were in the mountains Mr. Vile couldn't find you - safe right!, but...")
                                         print("A polar bear found you and decided to take you to his cave to hang out with his polar bear buddies. You were forced to party with them for the rest of your life. ")
                                         print("On top of that VILE mystery was left unsolved and your famous title lost")
+                                        print(f"Your total score is {score}.")
                                         check = False 
 
                 elif int(country_choice) == 2: 
+                            score += 2 
                             print(" ")
                             print("You have finally landed in Japan, such a long flight!")
                             print("You love sushi so you stop for a bite at the airport.")
@@ -230,9 +244,11 @@ def main():
                                     print("And to make it worse at that exact moment the thief escapes.")
                                     print("You are stuck in the hospital for weeks and are not able to catch the thief. Your boss tells your time has run out and that you have to get back home.")
                                     print("Your mission is unsuccessful.")
+                                    print(f"Your total score is {score}.")
                                     check = False 
                                     
                                 elif int(catch_thief_choice) == 2: 
+                                    score += 2 
                                     print(" ")
                                     print("You were lucky that you came to the hospital as quick as you could.")
                                     print("The doctor said that if you stayed in pain for any longer then healing could have taken weeks!")
@@ -254,32 +270,40 @@ def main():
 
                                     elif dessert_choice.isnumeric()== True:
                                         if int(dessert_choice) == 1: 
+                                            score += 2 
                                             print("And you together you enjoyed your slice of cake happily ever after.")
                                             print(" ")
                                             print("But wait we're not done solve this challenge to fully complete the mission!")
                                             challengeInstructions()
                                             playChallenge(board)
+                                            print(f"Your total score is {score}.")
                                             check = False 
-                                        elif int(dessert_choice) == 2: 
+                                        elif int(dessert_choice) == 2:
+                                            score += 2 
                                             print("And you together you enjoyed your tray of cookies happily ever after.")
                                             print(" ")
                                             print("But wait we're not done solve this challenge to fully complete the mission!")
                                             challengeInstructions()
                                             playChallenge(board)
+                                            print(f"Your total score is {score}.")
                                             check = False
                                         elif int(dessert_choice) == 3: 
+                                            score += 2
                                             print("And you together you enjoyed your ice cream happily ever after.") 
                                             print(" ")
                                             print("But wait we're not done solve this challenge to fully complete the mission!")
                                             challengeInstructions()
                                             playChallenge(board)
+                                            print(f"Your total score is {score}.")
                                             check = False 
                                         elif int(dessert_choice) == 4: 
+                                            score += 2
                                             print("And you together you enjoyed your tray of brownies happily ever after.")
                                             print(" ")
                                             print("But wait we're not done solve this challenge to fully complete the mission!")
                                             challengeInstructions()
                                             playChallenge(board)
+                                            print(f"Your total score is {score}.")
                                             check = False 
 
         else: 
