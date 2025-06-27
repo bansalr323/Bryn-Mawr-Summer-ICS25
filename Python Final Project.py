@@ -75,7 +75,7 @@ def printBoard(grid):
 def challengeInstructions(): 
     print(" ")
     print("Basically for this challenge there is going to be a 3*3 grid. There are 4 spots that are the winning spots. If you guess even just 1 of those spots correctly you win. ")
-    print("If you don't guess any of the spots correctly you lose. You only have 4 guesses.")
+    print("If you don't guess any of the spots correctly you lose.")
     print("Put the row and column you want to guess into the program.")
     print("An X will be placed in that spot.") 
     print("Ready, Set, Go!")
