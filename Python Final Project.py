@@ -74,10 +74,11 @@ def printBoard(grid):
 
 def challengeInstructions(): 
     print(" ")
-    print("Basically for this challenge there is going to be a 3*3 grid. There are 5 spots that are the winning spots. If you guess even just 1 of those spots correctly you win. ")
-    print("If you don't guess any of the spots correctly you lose.")
+    print("Basically for this challenge there is going to be a 3*3 grid. There are 4 spots that are the winning spots. If you guess even just 1 of those spots correctly you win. ")
+    print("If you don't guess any of the spots correctly you lose. You only have 4 guesses.")
     print("Put the row and column you want to guess into the program.")
     print("An X will be placed in that spot.") 
+    print("Ready, Set, Go!")
 
 def createchoices(): 
     choices = [] 
@@ -92,8 +93,8 @@ def playChallenge(grid):
     check = True
     while tries <= 4 and check == True:
         print(" ")
-        row = int(input("Enter the row you would like to guess: "))
-        col = int(input("Enter the column you would like to guess: "))
+        row = int(input("Enter the row you would like to guess (has to be a number from 0-2): "))
+        col = int(input("Enter the column you would like to guess (has to be a number from 0-2): "))
         grid[row][col] = "X"
         printBoard(grid)
         if (row,col) in wins:
