@@ -13,7 +13,7 @@ def intro():
 
 def country_deciding_menu(): 
     print(" ") 
-    print("You have 3 options: ") 
+    print("You have 2 options: ") 
     print("1. Go to Indonesia and defeat Mr. Vile who is planning to meet up with Mrs. Villy and together they will make VILE stronger (not good!).")
     print("2. Go to Japan. VILE is planning on stealing all the toys from the shops, making all the businesses there go bankrupt!")
     country_choice = input("Which option do you choose?: ") 
